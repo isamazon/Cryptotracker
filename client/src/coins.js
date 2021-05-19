@@ -8,8 +8,11 @@ function Coins(props) {
       <div className="coin-container">
         <img src={props.coinimg} alt={props.alt} />
         <h1>{props.name}</h1>
+        <p>Current price:</p>
         <p>{props.symbol}</p>
         <p className="price">${props.price}</p>
+        <p>market cap:</p>
+        <p className="coin-volume">${props.volume.toLocaleString()}</p>
       </div>
     </Col>
   );

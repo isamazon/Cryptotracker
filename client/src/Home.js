@@ -50,6 +50,7 @@ function Home() {
                 coinimg={coin.image}
                 name={coin.name}
                 price={coin.current_price}
+                volume={coin.market_cap}
               />
             );
           })}

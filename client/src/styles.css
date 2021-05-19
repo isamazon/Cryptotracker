@@ -1,7 +1,7 @@
 .main-fld-cnt {
   position: relative;
   height: 100vh;
-  background-color: #748cab;
+  background-color: #f0ebd8;
 }
 
 .main-fld-cnt .inner-cnt {
@@ -21,7 +21,7 @@
 }
 
 .main-fld-cnt .inner-cnt h1 {
-  color: #00f2fa;
+  color: #748cab;
 }
 
 .main-fld-cnt .inner-cnt .form-1 {
@@ -102,6 +102,10 @@
 .main-fld-cnt .inner-cnt .row-1 .coin-column h1 {
   color: white;
   text-align: center;
+}
+
+.main-fld-cnt .inner-cnt .row-1 .coin-column p {
+  color: white;
 }
 
 .main-fld-cnt .inner-cnt .row-1 .coin-column .price {
