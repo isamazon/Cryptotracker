@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+
 import { Container, Row, Col } from "react-bootstrap";
 import axios from "axios";
 import "./styles.css";
 import Coins from "./coins";
-// https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false
 
 function Home() {
   const [coins, setCoins] = useState([]);
@@ -31,8 +30,8 @@ function Home() {
 
   return (
     <Container fluid className="main-fld-cnt">
-      <Container className="inner-cnt">
-        <h1>Coin tracker</h1>
+      <Container fluid className="inner-cnt">
+        <h1 className="main-h1">CryptoTracker</h1>
         <form className="form-1">
           <input
             className="coin-input"
@@ -51,6 +50,8 @@ function Home() {
                 name={coin.name}
                 price={coin.current_price}
                 volume={coin.market_cap}
+                priceChange={coin.price_change_percentage_24h}
+                marketcap={coin.mar}
               />
             );
           })}

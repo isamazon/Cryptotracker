@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import "./styles.css";
 
 function Coins(props) {
@@ -11,7 +11,7 @@ function Coins(props) {
         <p>Current price:</p>
         <p>{props.symbol}</p>
         <p className="price">${props.price}</p>
-        <p>market cap:</p>
+        <p>Market cap:</p>
         <p className="coin-volume">${props.volume.toLocaleString()}</p>
       </div>
     </Col>

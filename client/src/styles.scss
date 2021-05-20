@@ -1,38 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap");
+$font1: "Allan", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+$font2: "Pattaya", sans-serif;
 .main-fld-cnt {
   position: relative;
   height: 100vh;
-  background-color: #f0ebd8;
+  background-color: #051923;
   .inner-cnt {
     position: relative;
     height: 100%;
+    top: 0;
     background: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1 {
-      color: #748cab;
+    .main-h1 {
+      position: relative;
+      top: 5%;
+      font-family: $font1;
+      font-size: 80px;
+      letter-spacing: 5px;
+      color: #00a6fb;
+      @media screen and (max-width: 580px) {
+        font-size: 50px;
+      }
     }
     .form-1 {
+      position: relative;
       background: none;
       height: 20%;
+      top: 0%;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       .coin-input {
-        color: black;
+        background: #006494;
         border-radius: 20px;
+        border: 2px solid #00a6fb;
+        font-family: $font2;
         height: 20%;
+        text-align: center;
         padding: 20px 50px;
+        &:focus {
+          outline: none;
+          color: white;
+        }
+        &::placeholder {
+          color: #00a6fb;
+        }
+        &:focus {
+          color: #0582ca;
+        }
       }
     }
     .row-1 {
       position: relative;
       flex-direction: row;
       background: none;
-      width: 100%;
-      height: 600px;
+      width: 70%;
+      height: 700px;
+      top: -5%;
+      padding: 90px 0px;
       overflow-y: auto;
+      @media screen and (max-width: 580px) {
+        width: 100%;
+        top: 0%;
+      }
       .coin-column {
         position: relative;
         height: 600px;
@@ -42,17 +76,24 @@
         align-items: center;
         border-radius: 0px;
         background: none;
-
+        @media screen and (max-width: 580px) {
+          height: 400px;
+        }
         .coin-container {
           position: relative;
           width: 95%;
           height: 95%;
           display: flex;
-
+          box-shadow: 0px 5px 20px rgb(0, 0, 0);
           flex-direction: column;
           align-items: center;
           border-radius: 20px;
           background-color: #1d2d44;
+          transition: 0.5s;
+          &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 15px 25px black;
+          }
         }
         img {
           height: 100px;
@@ -69,26 +110,29 @@
         .price {
           color: white;
         }
+        .coin-percent {
+          font-size: 20px;
+        }
       }
     }
   }
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #003554;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #00a6fb;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #0582ca;
 }

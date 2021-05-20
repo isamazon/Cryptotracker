@@ -8,9 +8,7 @@ import Home from "./Home";
 function App() {
   return (
     <div className="app">
-      <Switch>
-        <Route exact path="/" component={Home} />
-      </Switch>
+      <Home />
     </div>
   );
 }
