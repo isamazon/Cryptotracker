@@ -50,8 +50,8 @@ function Home() {
                 name={coin.name}
                 price={coin.current_price}
                 volume={coin.market_cap}
+                marketcap={coin.total_volume}
                 priceChange={coin.price_change_percentage_24h}
-                marketcap={coin.mar}
               />
             );
           })}

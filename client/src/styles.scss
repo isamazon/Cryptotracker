@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap");
-$font1: "Allan", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+$font1: "Fugaz One", cursive;
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 $font2: "Pattaya", sans-serif;
 .main-fld-cnt {
@@ -21,6 +21,7 @@ $font2: "Pattaya", sans-serif;
       font-size: 80px;
       letter-spacing: 5px;
       color: #00a6fb;
+      text-shadow: 0px 10px 20px rgb(0, 0, 0);
       @media screen and (max-width: 580px) {
         font-size: 50px;
       }
@@ -35,7 +36,7 @@ $font2: "Pattaya", sans-serif;
       justify-content: center;
       align-items: center;
       .coin-input {
-        background: #006494;
+        background: none;
         border-radius: 20px;
         border: 2px solid #00a6fb;
         font-family: $font2;
@@ -110,13 +111,21 @@ $font2: "Pattaya", sans-serif;
         .price {
           color: white;
         }
-        .coin-percent {
-          font-size: 20px;
+        .change-p {
+          letter-spacing: 5px;
+          font-weight: 400;
+        }
+        .coin-percent-red {
+          color: red;
+        }
+        .coin-percent-green {
+          color: rgb(0, 252, 0);
         }
       }
     }
   }
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 5px;

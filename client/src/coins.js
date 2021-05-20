@@ -8,11 +8,23 @@ function Coins(props) {
       <div className="coin-container">
         <img src={props.coinimg} alt={props.alt} />
         <h1>{props.name}</h1>
-        <p>Current price:</p>
         <p>{props.symbol}</p>
-        <p className="price">${props.price}</p>
-        <p>Market cap:</p>
-        <p className="coin-volume">${props.volume.toLocaleString()}</p>
+        <p className="price">Current price: ${props.price}</p>
+        <p className="coin-volume">Volume: ${props.volume.toLocaleString()}</p>
+        <p className="change-p">24hr change:</p>
+        {props.priceChange < 0 ? (
+          <p className="coin-percent-red">
+            🔻{props.priceChange.toFixed(2)}%🔻
+          </p>
+        ) : (
+          <p className="coin-percent-green">
+            🚀{props.priceChange.toFixed(2)}%🚀
+          </p>
+        )}
+
+        <p className="coin-marketcap">
+          Mkt Cap: ${props.marketcap.toLocaleString()}
+        </p>
       </div>
     </Col>
   );

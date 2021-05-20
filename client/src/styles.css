@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 .main-fld-cnt {
   position: relative;
@@ -26,10 +26,11 @@
 .main-fld-cnt .inner-cnt .main-h1 {
   position: relative;
   top: 5%;
-  font-family: "Allan", cursive;
+  font-family: "Fugaz One", cursive;
   font-size: 80px;
   letter-spacing: 5px;
   color: #00a6fb;
+  text-shadow: 0px 10px 20px black;
 }
 
 @media screen and (max-width: 580px) {
@@ -56,7 +57,7 @@
 }
 
 .main-fld-cnt .inner-cnt .form-1 .coin-input {
-  background: #006494;
+  background: none;
   border-radius: 20px;
   border: 2px solid #00a6fb;
   font-family: "Pattaya", sans-serif;
@@ -182,8 +183,17 @@
   color: white;
 }
 
-.main-fld-cnt .inner-cnt .row-1 .coin-column .coin-percent {
-  font-size: 20px;
+.main-fld-cnt .inner-cnt .row-1 .coin-column .change-p {
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+
+.main-fld-cnt .inner-cnt .row-1 .coin-column .coin-percent-red {
+  color: red;
+}
+
+.main-fld-cnt .inner-cnt .row-1 .coin-column .coin-percent-green {
+  color: #00fc00;
 }
 
 /* width */
