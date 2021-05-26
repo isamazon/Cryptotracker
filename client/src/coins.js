@@ -7,7 +7,7 @@ function Coins(props) {
     <Col lg={4} md={6} className="coin-column">
       <div className="coin-container">
         <img src={props.coinimg} alt={props.alt} />
-        <h1>{props.name}</h1>
+        <h1 className="crypto-h1">{props.name}</h1>
         <p>{props.symbol}</p>
         <p className="price">Current price: ${props.price}</p>
         <p className="coin-volume">Volume: ${props.volume.toLocaleString()}</p>

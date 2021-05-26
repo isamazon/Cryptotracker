@@ -35,7 +35,14 @@
 
 @media screen and (max-width: 580px) {
   .main-fld-cnt .inner-cnt .main-h1 {
-    font-size: 50px;
+    font-size: 40px;
+    letter-spacing: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-fld-cnt .inner-cnt .main-h1 {
+    font-size: 35px;
   }
 }
 
@@ -112,6 +119,12 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  .main-fld-cnt .inner-cnt .row-1 {
+    padding: 0px 0px;
+  }
+}
+
 .main-fld-cnt .inner-cnt .row-1 .coin-column {
   position: relative;
   height: 600px;
@@ -131,7 +144,7 @@
 
 @media screen and (max-width: 580px) {
   .main-fld-cnt .inner-cnt .row-1 .coin-column {
-    height: 400px;
+    height: 500px;
   }
 }
 
@@ -164,28 +177,43 @@
           box-shadow: 0px 15px 25px black;
 }
 
+.main-fld-cnt .inner-cnt .row-1 .coin-column .coin-container:hover .crypto-h1 {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
 .main-fld-cnt .inner-cnt .row-1 .coin-column img {
   height: 100px;
   width: 100px;
   margin: 10px 0px;
 }
 
-.main-fld-cnt .inner-cnt .row-1 .coin-column h1 {
+.main-fld-cnt .inner-cnt .row-1 .coin-column .crypto-h1 {
   color: white;
+  font-family: "Fugaz One", cursive;
   text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: 1px solid #00a6fb;
 }
 
 .main-fld-cnt .inner-cnt .row-1 .coin-column p {
   color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main-fld-cnt .inner-cnt .row-1 .coin-column .price {
   color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main-fld-cnt .inner-cnt .row-1 .coin-column .change-p {
   letter-spacing: 5px;
   font-weight: 400;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main-fld-cnt .inner-cnt .row-1 .coin-column .coin-percent-red {
